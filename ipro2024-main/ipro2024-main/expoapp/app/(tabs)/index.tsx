@@ -27,7 +27,7 @@ const FirstRoute = () => (
             flexDirection: "row",
           }}
         >
-          {Array.from({ length: 5 }).map((_, index) => (
+          {Array.from({ length: 8 }).map((_, index) => (
             <View>
               <Image
                 style={styles.imgContainerTop}
@@ -65,6 +65,146 @@ const FirstRoute = () => (
       </View>
       <View style={{}}>
         <Text style={{ fontSize: 10 }}>Аудио ном</Text>
+      </View>
+      <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{
+          alignItems: "center",
+          //justifyContent: "space-around",
+          flexDirection: "row",
+
+          //height: 150,
+          //borderWidth: 1,
+        }}
+      >
+        {Array.from({ length: 10 }).map((_, index) => (
+          <View>
+            <Image
+              style={styles.imgContainer}
+              source={{
+                uri: "https://reactnative.dev/img/tiny_logo.png",
+              }}
+            />
+            <AntDesign
+                name="heart"
+                size={16}
+                color="pink"
+                style={{ position: "absolute", top: 5, right: 15 }}
+              />
+            <Text style={{ color: "gray", marginLeft: 10 }}>James</Text>
+            <Text style={{ fontSize: 10, marginLeft: 10 }}>Shidet muhlag </Text>
+          </View>
+        ))}
+      </ScrollView>
+      <View style={{ flexDirection: "row" }}>
+        <View style={{ flexDirection: "row", flex: 3, alignItems: "center" }}>
+          <Text style={{ fontWeight: 800,marginRight:2}}>Зөвхөн Mbook - ээс</Text>
+          <FontAwesome6 name="headset" size={18} color="grey"/>
+        </View>
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            flex: 1,
+          }}
+        >
+          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
+          <AntDesign name="right" size={18} color="gold" />
+        </View>
+      </View>
+      <View style={{}}>
+        <Text style={{ fontSize: 10 }}>Аудио номууд</Text>
+      </View>
+      <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{
+          alignItems: "center",
+          //justifyContent: "space-around",
+          flexDirection: "row",
+
+          //height: 150,
+          //borderWidth: 1,
+        }}
+      >
+        {Array.from({ length: 10 }).map((_, index) => (
+          <View>
+            <Image
+              style={styles.imgContainer}
+              source={{
+                uri: "https://reactnative.dev/img/tiny_logo.png",
+              }}
+            />
+            <Text style={{ color: "gray", marginLeft: 10 }}>James</Text>
+            <Text style={{ fontSize: 10, marginLeft: 10 }}>Shidet muhlag </Text>
+          </View>
+        ))}
+      </ScrollView>
+      <View style={{ flexDirection: "row" }}>
+        <View style={{ flexDirection: "row", flex: 3, alignItems: "center" }}>
+          <Text style={{ fontWeight: 800 }}>Анх удаа ном сонсох гэж байна уу?</Text>
+        </View>
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            flex: 1,
+          }}
+        >
+          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
+          <AntDesign name="right" size={18} color="gold" />
+        </View>
+      </View>
+      <View style={{}}>
+        <Text style={{ fontSize: 10 }}>Унших завгүй бол
+          <Text style={{ fontSize: 16 }}> сонсоод </Text>
+          үз
+        </Text>
+      </View>
+      <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{
+          alignItems: "center",
+          //justifyContent: "space-around",
+          flexDirection: "row",
+
+          //height: 150,
+          //borderWidth: 1,
+        }}
+      >
+        {Array.from({ length: 10 }).map((_, index) => (
+          <View>
+            <Image
+              style={styles.imgContainer}
+              source={{
+                uri: "https://reactnative.dev/img/tiny_logo.png",
+              }}
+            />
+            <Text style={{ color: "gray", marginLeft: 10 }}>James</Text>
+            <Text style={{ fontSize: 10, marginLeft: 10 }}>Shidet muhlag </Text>
+          </View>
+        ))}
+      </ScrollView>
+      <View style={{ flexDirection: "row" }}>
+        <View style={{ flexDirection: "row", flex: 3, alignItems: "center" }}>
+          <Text style={{ fontWeight: 800 }}>Багц номууд</Text>
+          <AntDesign name="book" size={18} color="green" />
+        </View>
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            flex: 1,
+          }}
+        >
+          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
+          <AntDesign name="right" size={18} color="gold" />
+        </View>
       </View>
       <ScrollView
         horizontal={true}
