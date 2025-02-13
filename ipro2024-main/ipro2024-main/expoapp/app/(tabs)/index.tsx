@@ -17,7 +17,7 @@ import { AntDesign, FontAwesome6 } from "@expo/vector-icons";
 
 const FirstRoute = () => (
   <View style={{ flex: 1, backgroundColor: "#ccc" }}>
-    <ScrollView>
+    <ScrollView >
       <View style={{ height: 150 }}>
         <ScrollView
           horizontal={true}
@@ -47,7 +47,7 @@ const FirstRoute = () => (
           ))}
         </ScrollView>
       </View>
-        <View style={{ flexDirection: "row", flex: 3, alignItems: "center" }}>
+        <View style={{ flexDirection: "row", flex: 3, alignItems: "center"}}>
           <Text style={{ fontWeight: 800 }}>Энэ сарын онцлох</Text>
           <AntDesign name="star" size={18} color="gold" />
         </View>
@@ -57,10 +57,11 @@ const FirstRoute = () => (
             alignItems: "center",
             justifyContent: "flex-end",
             flex: 1,
+            marginBottom:10
           }}
         >
         </View>
-      <View style={{}}>
+      <View style={{marginBottom:10}}>
         <Text style={{ fontSize: 10 }}>Аудио ном</Text>
       </View>
       <ScrollView
@@ -94,9 +95,9 @@ const FirstRoute = () => (
           </View>
         ))}
       </ScrollView>
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flexDirection: "row",marginTop:10 }}>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <Text style={{ fontWeight: 800,marginLeft:2}}>Зөвхөн Mbook - ээс</Text>
+          <Text style={{ fontWeight: 800,marginRight:2}}>Зөвхөн Mbook - ээс</Text>
           <FontAwesome6 name="headset" size={18} color="grey"/>
         </View>
         <View
@@ -111,7 +112,7 @@ const FirstRoute = () => (
           <AntDesign name="right" size={18} color="gold" />
         </View>
       </View>
-      <View style={{}}>
+      <View style={{marginBottom:10}}>
         <Text style={{ fontSize: 10 }}>Аудио номууд</Text>
       </View>
       <ScrollView
@@ -139,7 +140,7 @@ const FirstRoute = () => (
           </View>
         ))}
       </ScrollView>
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flexDirection: "row",marginTop:10 }}>
         <View style={{ flexDirection: "row", flex: 3, alignItems: "center" }}>
           <Text style={{ fontWeight: 800 }}>Анх удаа ном сонсох гэж байна уу?</Text>
         </View>
@@ -151,11 +152,11 @@ const FirstRoute = () => (
             flex: 1,
           }}
         >
-          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
+          <Text style={{ fontWeight: 800}}>Бүгд</Text>
           <AntDesign name="right" size={18} color="gold" />
         </View>
       </View>
-      <View style={{}}>
+      <View style={{marginBottom:10}}>
         <Text style={{ fontSize: 10 }}>Унших завгүй бол
           <Text style={{ fontSize: 16 }}> сонсоод </Text>
           үз
@@ -186,7 +187,7 @@ const FirstRoute = () => (
           </View>
         ))}
       </ScrollView>
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flexDirection: "row" ,marginTop:10}}>
         <View style={{ flexDirection: "row", flex: 3, alignItems: "center" }}>
           <Text style={{ fontWeight: 800 }}>Багц номууд</Text>
           <AntDesign name="book" size={18} color="green" />
@@ -197,9 +198,10 @@ const FirstRoute = () => (
             alignItems: "center",
             justifyContent: "flex-end",
             flex: 1,
+            marginBottom:10
           }}
         >
-          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
+          <Text style={{ fontWeight: 800}}>Бүгд</Text>
           <AntDesign name="right" size={18} color="gold" />
         </View>
       </View>
@@ -216,7 +218,7 @@ const FirstRoute = () => (
         }}
       >
         {Array.from({ length: 10 }).map((_, index) => (
-          <View>
+          <View style={{marginBottom:10}}>
             <Image
               style={styles.imgContainer}
               source={{
@@ -230,8 +232,8 @@ const FirstRoute = () => (
       </ScrollView>
       <ImageBackground source={{ uri: 'https://d3tfpmmm736cqr.cloudfront.net/r_sm_h/images/newsfeed/item/generate/cover/677cda45_1a1814_1.983.jpg' }} style={{width:"auto",height:200}}>
       <View style={{ flexDirection: "row", flex: 3, alignItems: "center" }}>
-          <Text style={{ fontWeight: 800,color:"white",marginLeft:10 }}>Credit books</Text>
-          <FontAwesome6 name="star-and-crescent" size={18} color="yellow" />
+          <Text style={{ fontWeight: 800,color:"white",marginLeft:10 ,marginRight:3}}>Credit books</Text>
+          <FontAwesome6 name="star-and-crescent" size={16} color="yellow" />
         </View>
       <ScrollView
         horizontal={true}
@@ -263,13 +265,13 @@ const FirstRoute = () => (
       </ScrollView>
       </ImageBackground>
         
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flexDirection: "row",marginTop:10 }}>
         <View style={{ flexDirection: "row", flex: 3, alignItems: "center" }}>
           <Text style={{ fontWeight: 800,marginRight:2 }}>Заавал сонсох 10 ном</Text>
           <FontAwesome6 name="headset" size={18} color="grey"/>
         </View>
       </View>
-      <View style={{flexDirection: "row",alignItems: "center" }}>
+      <View style={{flexDirection: "row",alignItems: "center" ,marginBottom:10}}>
         <Text style={{ fontSize: 10 }}>Subscription/Credit эрхээрээ аваарай</Text>
         <AntDesign name="star" size={18} color="gold" />
       </View>
@@ -286,7 +288,7 @@ const FirstRoute = () => (
         }}
       >
         {Array.from({ length: 10 }).map((_, index) => (
-          <View>
+          <View style={{marginBottom:10}}>
             <Image
               style={styles.imgContainer}
               source={{
@@ -353,7 +355,7 @@ const FirstRoute = () => (
       </ImageBackground>
         
                 {/* 10 tsagiin buteeluud */}
-                <View style={{ flexDirection: "row" }}>
+                <View style={{ flexDirection: "row",marginTop:10 }}>
         <View>
           <Text style={{ fontWeight: 800,marginRight:2}}>+10 цагийн бүтээлүүд</Text>
         </View>
@@ -365,11 +367,11 @@ const FirstRoute = () => (
             flex: 1,
           }}
         >
-          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
+          <Text style={{ fontWeight: 800}}>Бүгд</Text>
           <AntDesign name="right" size={18} color="gold" />
         </View>
       </View>
-      <View style={{}}>
+      <View style={{marginBottom:10}}>
         <Text style={{ fontSize: 10 }}>Аудио ном</Text>
       </View>
       <ScrollView
@@ -398,7 +400,7 @@ const FirstRoute = () => (
         ))}
       </ScrollView>
 {/* 2024 best */}
-<View style={{ flexDirection: "row" }}>
+<View style={{ flexDirection: "row",marginTop:10 }}>
         <View style={{ flexDirection: "row" }}>
           <Text style={{ fontWeight: 800,marginRight:2}}>2024 Бестселлер</Text>
           <FontAwesome6 name="star" size={18} color="gold" />
@@ -411,11 +413,11 @@ const FirstRoute = () => (
             flex: 1,
           }}
         >
-          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
+          <Text style={{ fontWeight: 800}}>Бүгд</Text>
           <AntDesign name="right" size={18} color="gold" />
         </View>
       </View>
-      <View style={{}}>
+      <View style={{marginBottom:10}}>
         <Text style={{ fontSize: 10 }}>Аудио ном</Text>
       </View>
       <ScrollView
@@ -438,15 +440,27 @@ const FirstRoute = () => (
                 uri: "https://reactnative.dev/img/tiny_logo.png",
               }}
             />
+            <FontAwesome6 
+            name="headphones-simple" 
+            size={16} 
+            color="grey" 
+            style={{ position: "absolute", top: 5, right: 15 }}
+            />
+            <AntDesign
+                name="heart"
+                size={16}
+                color="pink"
+                style={{ position: "absolute", top: 5, right: 32 }}
+              />
             <Text style={{ color: "gray", marginLeft: 10 }}>James</Text>
             <Text style={{ fontSize: 10, marginLeft: 10 }}>Shidet muhlag </Text>
           </View>
         ))}
       </ScrollView>
           {/* -5 tsagiin buteeluud */}
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flexDirection: "row",marginTop:10 }}>
         <View>
-          <Text style={{ fontWeight: 800,marginRight:2}}>-5 цагийн бүтээлүүд</Text>
+          <Text style={{ fontWeight: 800}}>-5 цагийн бүтээлүүд</Text>
         </View>
         <View
           style={{
@@ -454,13 +468,14 @@ const FirstRoute = () => (
             alignItems: "center",
             justifyContent: "flex-end",
             flex: 1,
+            
           }}
         >
           <Text style={{ fontWeight: 800 }}>Бүгд</Text>
           <AntDesign name="right" size={18} color="gold" />
         </View>
       </View>
-      <View style={{}}>
+      <View style={{marginBottom:10}}>
         <Text style={{ fontSize: 10 }}>Аудио ном</Text>
       </View>
       <ScrollView
@@ -489,9 +504,9 @@ const FirstRoute = () => (
         ))}
       </ScrollView>
         {/* unegui audio nom */}
-        <View style={{flexDirection:"row"}}>
+        <View style={{flexDirection:"row",marginTop:10}}>
         <View>
-          <Text style={{ fontWeight: 800,marginRight:2}}>Үнэгүй аудио номууд</Text>
+          <Text style={{ fontWeight: 800}}>Үнэгүй аудио номууд</Text>
         </View>
         <View
           style={{
@@ -518,7 +533,7 @@ const FirstRoute = () => (
         }}
       >
         {Array.from({ length: 10 }).map((_, index) => (
-          <View>
+          <View style={{marginTop:10}}>
             <Image
               style={styles.imgContainer}
               source={{
@@ -531,9 +546,9 @@ const FirstRoute = () => (
         ))}
       </ScrollView>
           {/* zohiolcid */}
-          <View style={{flexDirection:"row"}} >
+          <View style={{flexDirection:"row",marginTop:10}} >
         <View style={{ flexDirection: "row", flex: 3, alignItems: "center" }}>
-          <Text style={{ fontWeight: 800,marginRight:2 }}>Зохиолчид</Text>
+          <Text style={{ fontWeight: 800,marginRight:2}}>Зохиолчид</Text>
           <FontAwesome6 name="headset" size={18} color="grey"/>
         </View>
         <View
@@ -544,7 +559,7 @@ const FirstRoute = () => (
             flex: 1,
           }}
         >
-          <Text style={{ fontWeight: 800 ,color:"gold"}}>Бүгд</Text>
+          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
           <AntDesign name="right" size={18} color="gold" />
         </View>
       </View>
@@ -561,7 +576,7 @@ const FirstRoute = () => (
         }}
       >
         {Array.from({ length: 10 }).map((_, index) => (
-          <View>
+          <View style={{marginTop:10}}>
             <Image
               style={styles.imgContainerZ}
               source={{
@@ -573,11 +588,13 @@ const FirstRoute = () => (
         ))}
       </ScrollView>
       {/* hevleliin gazruud */}
-      <View >
-        <View style={{ flexDirection: "row", flex: 3, alignItems:"center", width: 230}}>
-          <Text style={{ fontWeight: 800}} numberOfLines={2} ellipsizeMode="tail">Эрхлэн гаргагч, хэвлэлийн газрууд   
+      <View style={{flexDirection:"row",marginBottom:10}}>
+        <View  style={{  flexDirection: "row", flex: 3}}>
+          <Text  style={{  fontWeight: 800,marginRight:3}} >Эрхлэн гаргагч, хэвлэлийн газрууд   
           <FontAwesome6 name="headset" size={18} color="grey"/></Text>
         </View>
+        {/* numberOfLines={2} ellipsizeMode="tail" */}
+
         <View
           style={{
             flexDirection: "row",
@@ -586,7 +603,7 @@ const FirstRoute = () => (
             flex: 1,
           }}
         >
-          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
+          <Text style={{ fontWeight: 800}}>Бүгд</Text>
           <AntDesign name="right" size={18} color="gold" />
         </View>
       </View>
@@ -615,9 +632,9 @@ const FirstRoute = () => (
         ))}
       </ScrollView>
       {/* mbook nomiin club */}
-      <View style={{ }}>
-      <View style={{ flexDirection: "row", flex: 3, alignItems:"center", width: 220}}>
-          <Text style={{ fontWeight: 800,marginBottom:-10}} numberOfLines={2} ellipsizeMode="tail">Mbook номын клуб-с санал болгох нь </Text>
+      <View style={{ flexDirection:"row"}}>
+      <View style={{ flexDirection: "row", flex: 3, alignItems:"center"}}>
+          <Text style={{ fontWeight: 800,marginBottom:-10}} >Mbook номын клуб-с санал болгох нь </Text>
         </View>
         <View
           style={{
@@ -625,13 +642,14 @@ const FirstRoute = () => (
             alignItems: "center",
             justifyContent: "flex-end",
             flex: 1,
+            marginTop:20
           }}
         >
-          <Text style={{ fontWeight: 800 }}>Бүгд</Text>
-          <AntDesign name="star" size={18} color="gold" />
+          <Text style={{ fontWeight: 800}}>Бүгд</Text>
+          <AntDesign name="right" size={18} color="gold" />
         </View>
       </View>
-      <View style={{flexDirection:"row"}}>
+      <View style={{flexDirection:"row",marginBottom:10}}>
         <Text style={{ fontSize: 10 }}>Бидний сонссон номууд...</Text>
       </View>
 
@@ -648,7 +666,7 @@ const FirstRoute = () => (
         }}
       >
         {Array.from({ length: 10 }).map((_, index) => (
-          <View>
+          <View style={{marginBottom:50}}>
             <Image
               style={styles.imgContainer}
               source={{
