@@ -168,6 +168,7 @@ const ListingDetails = () => {
 
             <Text style={styles.listingDetails}>{listing.description}</Text>
           </View>
+          
         </Animated.ScrollView>
       </View>
 
@@ -181,7 +182,9 @@ const ListingDetails = () => {
         <TouchableOpacity onPress={() => {}} style={styles.footerBtn}>
           <Text style={styles.footerBtnTxt}>${listing.price}</Text>
         </TouchableOpacity>
+        
       </Animated.View>
+      
     </>
   );
 };
